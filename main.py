@@ -22,8 +22,10 @@ def gantt_fig(df):
                          Finish=str(row.Finish), Resource=str(row.Task)))
 
     colors = {'PSG NIGHTS': 'rgb(220, 0, 0)',
-          'BLUE ECG': 'rgb(1, 0.9, 0.16)',
-          'BLUE ACC': 'rgb(0, 255, 100)'}
+              'BLUE ECG': 'rgb(1, 0.9, 0.16)',
+              'BLUE ACC': 'rgb(0, 255, 100)',
+              'SLEEP DIARIES': 'rgb(211, 84, 0)',
+              'ORANGE ECG': 'rgb(211, 0, 0)'}
     
     fig = ff.create_gantt(data, index_col='Resource',
                           reverse_colors=False, show_colorbar=True,
